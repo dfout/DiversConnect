@@ -1,0 +1,22 @@
+{
+  "name": "diversconnect",
+  "version": "1.0.0",
+  "description": "An application where the diving community can grow.  Developed by Drew Fout and Zachary Gold",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "@types/supertest": "^6.0.2",
+    "concurrently": "^9.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
