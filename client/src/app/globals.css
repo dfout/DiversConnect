@@ -29,9 +29,19 @@ body {
 .nav-bar{
   display:flex;
   justify-content: space-around;
+  background-color: #142333;
+  color:white;
+  height: 4rem;
+  padding: 2%;
 }
 
 .nav-bar >span {
   cursor:pointer;
 
 }
+
+
+
+/* .child-container{
+  height: 100vh;
+} */
