@@ -6,7 +6,7 @@ const router = Router();
 
 // Create a new dive
 router.post("/", async (req: Request, res: Response) => {
-  const { participants, diveSiteId, dive_date, depth, time_underwater, notes } =
+  const { diveSiteId, date, duration, depth, participants, time_underwater, notes } =
     req.body;
 
   try {
@@ -17,12 +17,13 @@ router.post("/", async (req: Request, res: Response) => {
     }
 
     const newDive = new Dive({
-      participants,
       dive_site: diveSite._id,
-      dive_date,
-      depth,
+      date,
+      duration: duration || null, 
+      depth: participants || null,
+      participants: participants || null,
       time_underwater,
-      notes,
+      notes: notes || null
     });
 
     await newDive.save();

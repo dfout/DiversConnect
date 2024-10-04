@@ -6,6 +6,8 @@ interface IDive extends Document {
   duration?: number;
   depth?: number;
   participants: Types.ObjectId[];
+  time_underwater: number;
+  notes?: string;
   created_at: Date;
 }
 
@@ -15,6 +17,8 @@ const DiveSchema = new Schema<IDive>({
   duration: { type: Number },
   depth: { type: Number },
   participants: [{ type: Schema.Types.ObjectId, ref: "User" }],
+  time_underwater: {type: Number},
+  notes: {type: String, required: false},
   created_at: { type: Date, default: Date.now },
 });
 
