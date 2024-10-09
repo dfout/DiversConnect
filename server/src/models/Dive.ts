@@ -6,7 +6,7 @@ interface IDive extends Document {
   duration?: number;
   depth?: number;
   participants: Types.ObjectId[];
-  time_underwater: number;
+  time_underwater?: number;
   notes?: string;
   created_at: Date;
 }

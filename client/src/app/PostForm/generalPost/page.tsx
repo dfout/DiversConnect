@@ -1,52 +1,9 @@
-'use client';
-
-import React from 'react';
-// import useDiveStore from '@/app/stores/dives-store'; // Adjust the path as necessary
 import { PhotoIcon } from '@heroicons/react/24/solid'
 
-
-const diveForm: React.FC = () => {
-    // Zustand state for dive management
-    // const { addDive, fetchDives } = useDiveStore();
-
-    // Local state for form control
-    // const [diveSite, setDiveSite] = useState('')
-    // const [diveSiteId, setDiveSiteID] = useState('');
-    // const [date, setDate] = useState('')
-    // const [duration, setDuration] = useState('')
-    // const [depth, setDepth] = useState(0)
-    // const [participants, setParticipants] = useState([])
-    // const [timeUnder, setTimeUnder] = useState(0)
-
-    // useEffect(()=>{
-    //     fetchDives()
-    // },[fetchDives])
-
-    // const handleSubmit = (e: React.FormEvent) => {
-    //     e.preventDefault();
-    //     // find the Id of the diveSite
-    //     const site = diveSite
-    //     const dive = {
-    //         diveSiteId, 
-    //         date, 
-    //         duration: duration || null, 
-    //         depth: depth || null, 
-    //         participants, 
-    //         time_underwater: timeUnder || null, 
-
-    //     }
-
-    //     addDive(dive); // Add dive to Zustand store
-    //     setDiveSite(''); // Clear the input field after submission
-    // };
-
-
-    //If the diveSite is not in our database, we will ask them for more information to put it in the databse. 
-
+const generalPost: React.FC = () =>{
     return (
-        <>
-        
-        <h2>Dive Form</h2>
+        <div className="form-container">
+        <h3>General Post</h3>
         <form>
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
@@ -364,15 +321,9 @@ const diveForm: React.FC = () => {
           </button>
         </div>
       </form>
-        </>
-    );
-};
 
-export default diveForm;
+    </div>
+    )
+}
 
-
-
-
-
-
-
+export default generalPost;

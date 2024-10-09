@@ -40,7 +40,17 @@ body {
 
 }
 
+h2{
+  font-weight: 400;
+  font-size: 20pt;
+}
 
+.child-container{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
 
 /* .child-container{
   height: 100vh;
