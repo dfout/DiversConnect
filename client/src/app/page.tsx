@@ -11,7 +11,7 @@ import EventsList from './ui/eventlist';
 export default function Example() {
   return (
     <>
-    <h1>Divers Near You</h1>
+    <h2>Divers Near You</h2>
     <UsersList/>
      <h2>Dives</h2>
     <DivesList />

@@ -26,7 +26,32 @@ body {
   }
 }
 
-
 .nav-bar{
-  
+  display:flex;
+  justify-content: space-around;
+  background-color: #142333;
+  color:white;
+  height: 4rem;
+  padding: 2%;
 }
+
+.nav-bar >span {
+  cursor:pointer;
+
+}
+
+h2{
+  font-weight: 400;
+  font-size: 20pt;
+}
+
+.child-container{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* .child-container{
+  height: 100vh;
+} */

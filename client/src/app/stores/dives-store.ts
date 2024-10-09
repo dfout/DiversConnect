@@ -23,7 +23,7 @@ interface Participant {
 
 interface DiveState {
   dives: Dive[];
-  addDive: (dive: Dive) => Promise<void>; // Add a new dive
+  addDive: (dive: object) => Promise<void>; // Add a new dive
   deleteDive: (id: string) => Promise<void>; // Delete a dive by ID
   updateDive: (id: string, updateData: Partial<Dive>) => Promise<void>; // Update a dive by ID
   setDives: (dives: Dive[]) => void; // Set dives in state
@@ -62,7 +62,7 @@ const useDiveStore = create<DiveState>()((set, get) => ({
   },
 
   // Add a new dive
-  addDive: async (dive: Dive) => {
+  addDive: async (dive:object) => {
     try {
       const response = await axios.post("/api/dives", dive);
       set((state) => ({ dives: [...state.dives, response.data] }));
