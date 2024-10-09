@@ -1,5 +1,6 @@
 # DiversConnect
 
+DiversConnect is developed by Drew Fout and Zachary Gold. 
 
 ### License | Terms of Use
 
