@@ -1,6 +1,14 @@
 # DiversConnect
 
-DiversConnect is developed by Drew Fout and Zachary Gold. 
+DiversConnect is developed by: 
+
+
+Product Owner & Manager | Project Manager | Lead Software Engineer : Drew Fout
+
+Chief Software Architect | Lead DevOps Engineer | Backend Engineer : Zachary Gold
+
+Lead Designer | UI/UX Designer : Lauren Fout
+
 
 ### License | Terms of Use
 
