@@ -3,11 +3,11 @@
 DiversConnect is developed by: 
 
 
-Product Owner & Manager | Project Manager | Lead Software Engineer : Drew Fout
+Product Owner & Manager | Project Manager | Lead Software Engineer : [Drew Fout](www.linkedin.com/in/drew-fout)
 
-Chief Software Architect | Lead DevOps Engineer | Backend Engineer : Zachary Gold
+Chief Software Architect | Lead DevOps Engineer | Backend Engineer : [Zachary Gold](https://www.linkedin.com/in/zacharyryangold/)
 
-Lead Designer | UI/UX Designer : Lauren Fout
+Lead Designer | UI/UX Designer : [Lauren Fout](https://www.linkedin.com/in/laurenfout/)
 
 
 ### License | Terms of Use
