@@ -55,7 +55,3 @@ Currently, there is no app for divers to find each other and post about their di
 ### Who
 
 DiversConnect is for all types of Divers. From beginners, to experts. 
-
-# DiversConnect
-# DiversConnect
-# data-science
