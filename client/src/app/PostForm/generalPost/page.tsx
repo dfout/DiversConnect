@@ -1,6 +1,64 @@
+"use client"
 import { PhotoIcon } from '@heroicons/react/24/solid'
+// import { useState } from 'react';
+// import usePostStore from '@/app/stores/posts-store';
+import useDiveSiteStore from '@/app/stores/divesite-store';
+import { useEffect } from 'react';
+// import { useStore } from 'zustand';
 
-const generalPost: React.FC = () =>{
+const GeneralPost: React.FC = () =>{
+  
+
+
+  // const store = useStore(useDiveSiteStore)
+  // const { createPost } = usePostStore()
+  const { fetchDiveSites, getDiveSites } = useDiveSiteStore()
+  
+  // const [author, setAuthor] = useState({})
+  // // optional fields
+  // const [images, setImages] = useState([])
+  // const [location, setLocation] = useState('')
+  // getting all diveSites they can choose from
+  // const [diveSites, setDiveSites] = useState([])
+
+  // For creating a new diveSite
+  // const [dive, setDive] = useState({})
+  // const [error, setError] = useState<string | null>(null)
+
+  const sites = getDiveSites()
+  
+  // User can choose a divesite if they wish
+  useEffect(() => {
+    while (sites.length == 0){
+
+      fetchDiveSites()
+    }
+  }, [fetchDiveSites]);
+
+  
+  console.log("SITESSS",sites)
+ 
+  /* Author == 
+  { id:
+    username:
+    email:
+  }
+
+  */
+   /* DiveSite == 
+   {
+    name: string, 
+    location: {
+      country: string;
+      region?: string, 
+      coordinates:{
+        lat: number,
+        lng: number,
+      }
+    }
+  }
+  */
+
     return (
         <div className="form-container">
         <h3>General Post</h3>
@@ -326,4 +384,4 @@ const generalPost: React.FC = () =>{
     )
 }
 
-export default generalPost;
+export default GeneralPost;

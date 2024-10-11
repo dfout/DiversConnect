@@ -44,8 +44,13 @@ const useDiveSiteStore = create<DiveSiteState>()((set, get) => ({
 
   fetchDiveSites: async () => {
     try {
-      const response = await axios.get('/api/sites');
-      set({ diveSites: response.data });
+      const response = await fetch('/api/divesites');
+      if (!response.ok) {
+        throw new Error(`Error ${response.status}: ${response.statusText}`);
+      }
+      const data = await response.json();
+      console.log("Fetched dive sites from API:", data); // Log the data being fetched
+      set({ diveSites: data });  // Make sure this sets the state properly
     } catch (error) {
       console.error('Error fetching dive sites:', error);
     }

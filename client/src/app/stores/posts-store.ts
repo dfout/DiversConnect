@@ -15,13 +15,25 @@ interface Post {
   posted_at: Date;
   updated_at?: Date;
   location?: string;
-  dive?: string;
+  dive?: DiveSite // Change: from string to Dive Site because: Could be connected to the Dive instance....if exists. 
 }
 
 interface Author {
   id: string,
   username: string,
   email: string
+}
+
+interface DiveSite {
+  name: string, 
+  location: {
+    country: string;
+    region?: string, 
+    coordinates:{
+      lat: number,
+      lng: number,
+    }
+  }
 }
 
 // Zustand state interface for Post store
